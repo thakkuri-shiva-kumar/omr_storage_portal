@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Two Frame Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Left Frame -->
+    <div class="left-frame">
+        <form action="display.php" target="rightFrame">
+            <label>Name</label>
+            <input type="text" name="f1" required>
+
+            <label>Password</label>
+            <input type="password" name="f2" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Right Frame -->
+    <div class="right-frame">
+        <iframe name="rightFrame"></iframe>
+    </div>
+
+</div>
+
+</body>
+</html>
